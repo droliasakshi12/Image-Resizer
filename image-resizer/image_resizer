@@ -1,8 +1,8 @@
 import cv2 
 
 
-image1 =   r'C:\Users\data\OneDrive\Desktop\study\practical world projects\python_projects\image-resizer\myimage.jpg'
-new_image = r'C:\Users\data\OneDrive\Desktop\study\practical world projects\python_projects\image-resizer\new_img.jpg'
+image1    = r'myimage.jpg' #add you own file path 
+new_image = r'new_img.jpg' #add you own file path 
 score_percent = 500
 
 img = cv2.imread(image1,cv2.IMREAD_UNCHANGED)
@@ -18,3 +18,4 @@ cv2.imwrite(new_image,output)
 # cv2.imshow("img", src)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
