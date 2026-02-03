@@ -1,0 +1,20 @@
+import cv2 
+
+
+image1 =   r'C:\Users\data\OneDrive\Desktop\study\practical world projects\python_projects\image-resizer\myimage.jpg'
+new_image = r'C:\Users\data\OneDrive\Desktop\study\practical world projects\python_projects\image-resizer\new_img.jpg'
+score_percent = 500
+
+img = cv2.imread(image1,cv2.IMREAD_UNCHANGED)
+
+#calculating the percent 
+new_width = int(img.shape[1] * score_percent / 100)
+new_height = int(img.shape[0] * score_percent / 100)
+
+#resize the shape 
+output = cv2.resize(img , (new_width,new_height))   
+cv2.imwrite(new_image,output)
+
+# cv2.imshow("img", src)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
