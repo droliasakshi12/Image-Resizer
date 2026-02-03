@@ -1,6 +1,5 @@
 import cv2 
 
-
 image1    = r'myimage.jpg' #add you own file path 
 new_image = r'new_img.jpg' #add you own file path 
 score_percent = 500
